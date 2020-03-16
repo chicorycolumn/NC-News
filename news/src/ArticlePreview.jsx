@@ -33,16 +33,20 @@ const ArticlePreview = props => {
     <div className={styles.containerGrid}>
       <p className={styles.title}>{title}</p>
       <p className={styles.author}>by {author}</p>
-      <p className={styles.body}>{body.slice(0, 100)}...</p>
-      {/* <div className={styles.rightHandSideContainer}> */}
-      <p className={styles.topic}>{topic}</p>
-      <p className={styles.votes}>
-        <span role="img">⬆️</span>
-        666
-        <span role="img">⬇️</span>
-      </p>
-      <p className={styles.created_at}>{formattedDate}</p>
-      {/* </div> */}
+      <p className={styles.body}>{body.slice(0, 110)}...</p>
+      <div className={styles.rightHandSideContainer}>
+        <p className={styles.topic}>{topic}</p>
+        <p className={styles.votes}>
+          <span role="img">⬆️</span>
+          666
+          <span role="img">⬇️</span>
+        </p>
+        <p className={styles.comments}>
+          <span role="img">💬</span>
+          100
+        </p>
+        <p className={styles.created_at}>{formattedDate}</p>
+      </div>
     </div>
   );
 };
