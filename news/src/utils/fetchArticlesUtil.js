@@ -10,11 +10,11 @@ const fetchArticles = cb => {
   //     });
   cb([
     {
-      title: "Rise of Skywalker was awesome!",
+      title: "Rise of Skywalker",
       topic: "films",
       author: "sally1",
       body:
-        "While it was off to a rushed start, the film exceeded my expectations, rousing us with a blah...",
+        "While it was off to a rushed start, the film exceeded my expectations, rousing us with a classically fun and schlocky title crawl.",
       created_at: 1006778113389
     },
     {
@@ -22,15 +22,15 @@ const fetchArticles = cb => {
       topic: "pets",
       author: "sally2",
       body:
-        "What I don't understand about my cat's behaviour, is that he so often bumps me with his head, and I really blah...",
+        "What I don't understand about my cat's behaviour, is that he so often bumps me with his head, and I really can't work out what he means by it.",
       created_at: 1126778163389
     },
     {
-      title: "Result: Sanders in Iowa",
+      title: "Result: Sanders in Iowa. He actually did it! Well done Bernie!",
       topic: "politics",
       author: "sally3",
       body:
-        "Whether you love him or hate him, you certainly can't deny that Bernie Sanders has a real groundswell of support blah...",
+        "Whether you love him or hate him, you certainly can't deny that Bernie Sanders has a real groundswell of support. The question is, will it be enough?",
       created_at: 1103778963389
     }
   ]);

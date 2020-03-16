@@ -27,13 +27,14 @@ const ArticlePreview = props => {
   const day = new Date(created_at).getDate();
   const hour = new Date(created_at).getHours();
   const minute = new Date(created_at).getMinutes();
-  const formattedDate = `${hour}:${minute} ${lookup[month]} ${day} (${year})`;
+  const formattedDate = `${lookup[month]} ${day} ${hour}:${minute} (${year})`;
 
   return (
     <div className={styles.containerGrid}>
       <p className={styles.title}>{title}</p>
       <p className={styles.author}>by {author}</p>
-      <p className={styles.body}>{body.slice(0, 100)}</p>
+      <p className={styles.body}>{body.slice(0, 100)}...</p>
+      {/* <div className={styles.rightHandSideContainer}> */}
       <p className={styles.topic}>{topic}</p>
       <p className={styles.votes}>
         <span role="img">⬆️</span>
@@ -41,6 +42,7 @@ const ArticlePreview = props => {
         <span role="img">⬇️</span>
       </p>
       <p className={styles.created_at}>{formattedDate}</p>
+      {/* </div> */}
     </div>
   );
 };
